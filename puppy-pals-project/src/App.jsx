@@ -25,8 +25,10 @@ console.log(featuredPup)
             return <p onClick={()=>{setFeatPupId(puppy.id)}} key={puppy.id}>{puppy.name}</p>;
           })
         }
-      {featPupId && (
-        <div>
+
+    </div>
+    {featPupId && (
+        <div className="mainPup">
           <h2>{featuredPup.name}</h2>
           <ul>
             <li>Age: {featuredPup.age}</li>
@@ -34,7 +36,6 @@ console.log(featuredPup)
           </ul>
         </div>
       )}    
-    </div>
 
     </>
   )
